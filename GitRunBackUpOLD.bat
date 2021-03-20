@@ -10,7 +10,7 @@ msg awk "-- 1 --"
 
 cd \
 cd MyJavaProjects
-#git init
+git init
 git add *.java
 git status 
 git commit -m "My SQL commit"
@@ -21,7 +21,7 @@ msg awk "-- 2 --"
 
 cd \
 cd MyGitFiles
-#git init
+git init
 git add *.bat
 git status 
 git commit -m "My SQL commit"

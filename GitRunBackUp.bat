@@ -13,6 +13,7 @@ cd \
 cd MyJavaProjects
 git init
 git add *.java
+git commit -m "My SQL commit"
 git branch -M JavaSand
 git pull
 git push -u origin JavaSand

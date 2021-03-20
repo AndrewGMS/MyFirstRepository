@@ -6,19 +6,16 @@ public class Main {
         int IsPrimeNumber = 0; // признак простого числа
 
         long LimitNumberForMath = 0; // предел обработки
-        long LimitNumberForEach = 100 * 1000 * 1000; // Диапазон от нуля
+        long LimitNumberForEach = 10 * 1000 * 1000; // Диапазон от нуля
         long StartTime = System.currentTimeMillis();
 
 
-        if (LimitNumberForEach > 9) {
-            LimitNumberForMath = 9;
-        } else {
-            LimitNumberForMath = LimitNumberForEach;
-        }
+
+        if (LimitNumberForEach > 9) {LimitNumberForMath = 9;} else {LimitNumberForMath = LimitNumberForEach;}
         for (int i = 2; i <= LimitNumberForMath; i++) {
 //            System.out.println("i "+i+" LimitNumberForMath "+LimitNumberForMath);
 
-            for (int j = 2; j <= i; j++) {                                                           // 5a
+            for (int j = 2; j <= i; j++ ) {                                                           // 5a
 //                System.out.println("i "+i+" j "+j);
                 if ((i % j == 0) & (i != j))                                                      // 5b
                     IsPrimeNumber++;
@@ -27,21 +24,22 @@ public class Main {
             if (IsPrimeNumber == 0) {                                                    // +4
 //                System.out.println(i+" -+-");
                 CountPimeNumbers++;
-            } else IsPrimeNumber = 0;
+            }
+            else  IsPrimeNumber = 0;
         }
 //        System.out.println(" LimitNumberForEach "+LimitNumberForEach);
         int i10 = 9;
         int SignOfDivisibilityByThree = 3;
-        for (int i = 10; i < LimitNumberForEach + 1; i++) {                                                        //2
+        for (int i = 10; i < LimitNumberForEach+1; i++) {                                                        //2
             i10++;
-            if (SignOfDivisibilityByThree == 3) SignOfDivisibilityByThree = 1;
-            else SignOfDivisibilityByThree++;
+            if (SignOfDivisibilityByThree == 3) SignOfDivisibilityByThree = 1; else SignOfDivisibilityByThree++;
             if (i10 == 10) i10 = 0;
 // System.out.println(i+" -- "+i10);
             IsPrimeNumber = 0;
 //            if (i > 10) {                                                          // 3
             IsPrimeNumber = EratosfenSay10(i10);
-            if (SignOfDivisibilityByThree == 3) {
+            if (SignOfDivisibilityByThree == 3)
+            {
                 IsPrimeNumber = 1; // проверка на делимость на три
 //                    System.out.println(i+" -- "+ SignOfDivisibilityByThree);
             }

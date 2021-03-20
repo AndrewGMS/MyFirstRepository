@@ -1,4 +1,4 @@
-set @BDate=concat('2020-12-01',' 00:00:00');
+﻿set @BDate=concat('2020-12-01',' 00:00:00');
 set @EDate=concat('2020-12-15',' 23:59:59');
 
 SELECT 

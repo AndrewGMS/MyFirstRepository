@@ -17,7 +17,7 @@ git commit -m "My SQL commit"
 git pull
 git push -u origin main
 
-msg awk "-- 2 --"
+msg awk " -- 2 --"
 
 cd \
 cd MyGitFiles

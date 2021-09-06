@@ -34,7 +34,7 @@ public static void main(String[] args) {            //1
      int p = 0; // признак простого числа
      long q = 0; // предел обработки
      long tt = System.currentTimeMillis();
-     for(int i= 1;i<100000000;i++) 
+     for(int i= 1;i<100;i++) 
           {                                                                  //2    
            p = 0;
            if (i > 10) 

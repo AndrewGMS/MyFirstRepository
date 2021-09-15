@@ -10,14 +10,13 @@ git push -u origin main
 
 
 cd \
-cd MyJavaProjects
+cd MyHTMLProjects
 git init
 git add *.java
 git commit -m "My SQL commit"
-git branch -M JavaSand
+git branch -M HTMLSand
 git pull
-git push -u origin JavaSand
-
+git push -u origin HTMLSand
 
 cd \
 cd MyGitFiles

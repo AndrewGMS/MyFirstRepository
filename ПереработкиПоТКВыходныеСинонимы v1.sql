@@ -1,5 +1,5 @@
-set @BDate = concat('2022-01-01',' 00:00:00');
- set @EDate = concat('2022-01-31',' 23:59:59');
+set @BDate = concat('2022-02-01',' 00:00:00');
+ set @EDate = concat('2022-02-28',' 23:59:59');
 
 
 SELECT *

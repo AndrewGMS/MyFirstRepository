@@ -12,3 +12,7 @@ insert into managementreport.companies set nameCompany = "ММТР технол�
 insert into managementreport.companies set nameCompany = "ДА"
 insert into managementreport.companies set nameCompany = "СофтЭкспорт"
 
+create procedure `managementreport.getCompanies` ()
+begin
+select select * from managementreport.companies where isDelete = 0
+end

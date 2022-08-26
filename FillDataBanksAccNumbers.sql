@@ -1,8 +1,20 @@
 
-call managementreport.getCompanies();
+-- call managementreport.getCompanies();
+
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (3, 1, 1, 'ВТБ банк');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (3, 3, 1, 'ВТБ');
+
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (3, 1, 1, 'ВТБ банк');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (3, 3, 1, 'ВТБ');
+
 
 
 /*
+insert into managementreport.maindictionarystructure (StructureId, UnitName, UnitId, DictionaryId, ValueDefault) values (3, 'Банки', 0, 0, '');
+insert into managementreport.maindictionarystructure (StructureId, UnitName, UnitId, DictionaryId, ValueDefault) values (3, 'Банк. Наименование', 1, 0, '');
+insert into managementreport.maindictionarystructure (StructureId, UnitName, UnitId, DictionaryId, ValueDefault) values (3, 'Ключ. Дебиторка', 3, 0, '');
+
+
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 1, 4, 'ООО "Дот альфа"');
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 2, 4, '0');
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 3, 4, 'ДА');

@@ -2,11 +2,46 @@
 -- DateOperation timestamp,
 -- use managementreport;
 -- drop table managementreport.DocumentRegister;
-
-
-
-
 /*
+
+insert into managementreport.AccumulationAndMovementRegister (
+ DateOperation, 
+ DocumentStructureID,
+ DocumentUnitId,
+ DocumentId,
+ 
+ DebitStructureId,
+ DebitUnitId,
+ DebitDataId,
+ 
+ CreditStructureId,
+ CreditUnitId,
+ CreditDataId,
+ 
+ TransactionQuantity,
+ TransactionAmount,
+ TransactionDescriptiom)
+ values (
+ '2022-07-31', -- DateOperation, 
+ 1, -- DocumentStructureID,
+ 0, -- DocumentUnitId,
+ 1, -- DocumentId,
+ 
+ 4, -- DebitStructureId,
+ 1, -- DebitUnitId,
+ 1, -- DebitDataId,
+ 
+ 0, -- CreditStructureId,
+ 0, -- CreditUnitId,
+ 0, -- CreditDataId,
+ 
+ 0, -- TransactionQuantity,
+ 1663737.92, -- TransactionAmount,
+ 'первая операция' -- TransactionDescriptiom
+ 
+)
+
+
 
 insert into managementreport.MainDocument (
 DateOperation,

@@ -7,10 +7,11 @@ Set @DebSumOper = 1663737.92;
 -- select * from managementreport.debcompanyandbank
 -- select * from managementreport.maindictionary
 
-Set @DebDateOperaton = '2022-08-02';
+Set @DebDateOperaton = '2022-01-23';
 Set @DebCompanyName = 'ММТР';
-Set @DebBankName = 'ВТБ';
-Set @DebSumOper = 704970.91;
+Set @DebBankName = 'ВТБКарта';
+Set @DebSumOper = 93645.51;
+
 
 call InsertUpdateAccBalance(@DebDateOperaton, @DebCompanyName, @DebBankName, @DebSumOper);
 

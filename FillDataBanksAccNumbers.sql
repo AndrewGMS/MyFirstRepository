@@ -1,5 +1,6 @@
 
-
+select * from  managementreport.maindictionarystructure where StructureId = 4;
+select * from  managementreport.maindictionarystructure where StructureId = 3;
 
 call managementreport.getCompanies();
 /*
@@ -43,7 +44,9 @@ insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataVa
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 4, 12, '4');
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 5, 12, '6');
 
-
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 1, 12, 'ДА. Валюта.');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 4, 12, '4');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 5, 12, '6');
 
 
 
@@ -51,6 +54,11 @@ insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataVa
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 1, 1, 'ММТР. ВТБ.');
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 4, 1, '1');
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 5, 1, '1');
+
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 1, 13, 'ММТР. ВТБ. Карта. ');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 4, 13, '1');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 5, 13, '7');
+
 
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 1, 2, 'ДА. ВТБ.');
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (4, 4, 2, '4');
@@ -82,6 +90,8 @@ insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataVa
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (3, 1, 6, 'Валюта в рублях');
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (3, 3, 6, 'Валюта');
 
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (3, 1, 7, 'ВТБ корп. карта');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (3, 3, 7, 'ВТБКарта');
 
 
 
@@ -90,6 +100,12 @@ insert into managementreport.maindictionarystructure (StructureId, UnitName, Uni
 insert into managementreport.maindictionarystructure (StructureId, UnitName, UnitId, DictionaryId, ValueDefault) values (3, 'Банк. Наименование', 1, 0, '');
 insert into managementreport.maindictionarystructure (StructureId, UnitName, UnitId, DictionaryId, ValueDefault) values (3, 'Ключ. Дебиторка', 3, 0, '');
 
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 0, 1, 'ООО "ММТР"');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 0, 2, 'ООО "ММТР технологии"');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 0, 3, 'ООО "СофтЭкспорт"');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 0, 4, 'ООО "Дот альфа"');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 0, 5, 'ООО "ТЕСТ_01 нет параметра дебиторка"');
+insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 0, 6, 'ООО "ТЕСТ_02 параметр дебиторка пустая строка"');
 
 
 insert into managementreport.maindictionary (StructureId, UnitId, DataId, DataValue) values (2, 1, 1, 'ООО "ММТР"');

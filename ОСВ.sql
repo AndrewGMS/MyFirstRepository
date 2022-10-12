@@ -1,7 +1,6 @@
-
 use managementreport;
 
-set @SettlementBalanceDate = '2022-09-22';
+set @SettlementBalanceDate = '2022-10-01;
 
 call GetBanksCurrentBalances (@SettlementBalanceDate);
 

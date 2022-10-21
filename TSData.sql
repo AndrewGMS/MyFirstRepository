@@ -68,6 +68,8 @@ order by ts.xProjectName;
 
 
 /*
+drop table brokenboeing.TimeSheet;
+
 create table brokenboeing.TimeSheet (
 
 
@@ -80,12 +82,16 @@ create table brokenboeing.TimeSheet (
  , xTypeOfEmployment varchar(200) -- Спр_Вид занятости на проекте_название	+
  , xCustomerName varchar(200) -- Форма_Заказчики_Заказчик +
  , xSponsorName varchar(200) -- Спр_Спонсор_Наименование + 
- , xTimeSheetHours numeric(10.2) -- Часы списанные в Timesheet	+
+ , xTimeSheetHours decimal(10,2) -- Часы списанные в Timesheet	+
  , xEmploeeName varchar(200) -- eName	+
  , xInvoiceId varchar(200) -- InvoiceId +
+ , xClientId decimal(10)
+ , xProjectId decimal(10)
+ , xProgramId decimal(10)
  , xDateModified timestamp -- дата время внесения изменений
  
- )
+ 
+ );
 
 
 */

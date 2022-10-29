@@ -1,8 +1,8 @@
 use managementreport;
 
-set @SettlementBalanceDate = '2022-10-01;
+set @SettlementBalanceDate = '2022-10-21';
 
-call GetBanksCurrentBalances (@SettlementBalanceDate);
+ call GetBanksCurrentBalances (@SettlementBalanceDate);
 
 /*
 set @StructureId = 4; -- int unsigned,

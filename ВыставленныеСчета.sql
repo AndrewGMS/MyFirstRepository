@@ -18,7 +18,7 @@ create table brokenboeing.IssuedInvoices (
    xExtendedID varchar(200) -- ExtendedID
  , xID varchar(200) -- ID
  , xNumber varchar(200) -- №	
- , xCaption varchar(200) -- Заголовок	
+ , xCaption varchar(1000) -- Заголовок	
  , xSum  decimal(10,2) -- Сумма	
  , xStatus varchar(200) -- Статус	
  , xResponsiblePerson varchar(200) -- Ответственный	

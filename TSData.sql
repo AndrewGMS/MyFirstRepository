@@ -8,7 +8,7 @@ ts.xPeriod
 , ts.xBusinessUnitName
 , ts.xEmploeeID
 -- , ts.xProjectName
-, ii.xProject
+-- , ii.xProject
 , ts.xStageProjectName
 , ts.xProjectPhaseName
 , ts.xTypeOfEmployment

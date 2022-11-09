@@ -1,6 +1,6 @@
 
 
--- SELECT * FROM brokenboeing.timesheetex;
+-- SELECT * FROM brokenboeing.timesheetex where xComment like '%''%';
 
 -- delete FROM brokenboeing.timesheetex;
 /*

@@ -1,3 +1,57 @@
+/*
+drop table managementreport.MainDocumentData;
+
+
+create table managementreport.MainDocumentData (
+DocumentStructureID int unsigned not null,
+DocumentUnitId int unsigned,
+DocumentId int unsigned not null,
+
+DataSectionId int unsigned not null,
+DataTableIndexId int unsigned not null,
+DataRowNumberId int unsigned not null,
+DataId int unsigned not null,
+
+DataValueStructureId int unsigned,
+DataValueUnitId int unsigned,
+DataValueId int unsigned,
+DataValue varchar(200),
+
+Primary key (DocumentStructureID, DocumentUnitId, DocumentId, DataSectionId, DataTableIndexId, DataRowNumberId, DataId),
+foreign key (DocumentStructureID, DocumentUnitId, DataSectionId, DataTableIndexId, DataId) 
+        references managementreport.MainDocumentStructure (DocumentStructureID, DocumentUnitId, DataSectionId, DataTableIndexId, DataId) 
+
+, foreign key (DocumentStructureID, DocumentUnitId, DocumentId) references managementreport.MainDocument (DocumentStructureID, DocumentUnitId, DocumentId)     
+, foreign key (DataValueStructureId, DataValueUnitId, DataValueId) references managementreport.MainDictionary (StructureID, UnitId, DataId)
+)*/
+-- foreign key (DocumentStructureID, DocumentUnitId, DocumentId) references managementreport.MainDocument (DocumentStructureID, DocumentUnitId, DataSectionId)     
+-- foreign key (DataValueStructureId, DataValueUnitId, DataValueId) references managementreport.MainDictionary (StructureID, UnitId, DataId)
+
+-- alter table managementreport.MainDocumentStructure add primary key (DocumentStructureID, DocumentUnitId, DataSectionId, DataTableIndexId, DataId, DictionarytStructureId);
+
+-- alter table managementreport.MainDocument add foreign  key (DocumentStructureID, DocumentUnitID) references managementreport.MainDocumentStructure (DocumentStructureID, DocumentUnitID);
+
+-- alter table managementreport.MainDocument add foreign  key (DocumentOwnerStructureID, DocumentOwnerUnitId, DocumentOwnerId) references managementreport.MainDictionary (StructureID, UnitId, DataId);
+-- 
+-- alter table managementreport.accumulationandmovementregister add foreign key (DocumentStructureID, DocumentUnitID, DocumentID) references managementreport.MainDocument (DocumentStructureID, DocumentUnitID, DocumentID);
+
+
+
+--  `DocumentStructureID`, `DocumentUnitId`, `DocumentTypeName`, `DataSectionId`, `DataTableIndexId`, `DataId`, `DataDefaultValue`, `DictionarytStructureId`
+
+-- alter table managementreport.MainDocumentStructure add column DataSectionId int unsigned not null;
+-- alter table managementreport.MainDocumentStructure add column DataTableIndexId int unsigned not null;
+-- alter table managementreport.MainDocumentStructure add column DataId int unsigned not null;
+-- alter table managementreport.MainDocumentStructure add column DataDefaultValue varchar(200);
+-- alter table managementreport.MainDocumentStructure add column DictionarytStructureId int unsigned;
+
+
+-- alter table managementreport.MainDocumentStructure DROP PRIMARY KEY;
+-- alter table managementreport.MainDocumentStructure DROP FOREIGN KEY maindocument_ibfk_1;
+-- alter table managementreport.MainDocument DROP FOREIGN KEY maindocument_ibfk_1;
+-- alter table managementreport.AccumulationAndMovementRegister DROP FOREIGN KEY accumulationandmovementregister_ibfk_1;
+
+
 -- create table AccumulationAndMovementRegister (
 -- DateOperation timestamp,
 -- use managementreport;

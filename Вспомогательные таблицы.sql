@@ -1,6 +1,54 @@
 use brokenboeing;
 
 
+/*
+create table brokenboeing.BUStructureTable(
+tId decimal(10),
+tDescription varchar(200),
+tBUName varchar(200),
+tTaxForm varchar(200)
+);
+
+insert into brokenboeing.BUStructureTable (tId, tDescription, tBUName, tTaxForm) values ('111', ' ООО "СофтЭкспорт"', 'ММТР', 'УСН');
+insert into brokenboeing.BUStructureTable (tId, tDescription, tBUName, tTaxForm) values ('112', 'ООО "ММТР Технологии"', 'ММТР', 'ОСН');
+insert into brokenboeing.BUStructureTable (tId, tDescription, tBUName, tTaxForm) values ('113', 'ООО "ММТР"', 'ММТР', 'ОСН');
+
+select * from brokenboeing.BUStructureTable;
+
+*/
+/*
+create table brokenboeing.CustomerTypeTable(
+tId decimal(10),
+tDescription varchar(200),
+tSponsor_ID decimal(10)
+);
+
+insert into brokenboeing.CustomerTypeTable (tId, tDescription, tSponsor_ID) values ('301', 'Клиент', '201');
+insert into brokenboeing.CustomerTypeTable (tId, tDescription, tSponsor_ID) values ('302', 'Управление производством', '202');
+insert into brokenboeing.CustomerTypeTable (tId, tDescription, tSponsor_ID) values ('303', 'Управление персоналом', '202');
+insert into brokenboeing.CustomerTypeTable (tId, tDescription, tSponsor_ID) values ('304', 'Управление ресурсами', '202');
+insert into brokenboeing.CustomerTypeTable (tId, tDescription, tSponsor_ID) values ('305', 'АХО', '202');
+insert into brokenboeing.CustomerTypeTable (tId, tDescription, tSponsor_ID) values ('306', 'Финансовый отдел', '202');
+insert into brokenboeing.CustomerTypeTable (tId, tDescription, tSponsor_ID) values ('307', 'Отдел технической поддержки', '202');
+insert into brokenboeing.CustomerTypeTable (tId, tDescription, tSponsor_ID) values ('308', 'Отдел продаж', '202');
+insert into brokenboeing.CustomerTypeTable (tId, tDescription, tSponsor_ID) values ('309', 'Управление', '202');
+
+
+select * from brokenboeing.CustomerTypeTable;
+*/
+/*
+create table brokenboeing.SponsorTable(
+tId decimal(10),
+tDescription varchar(200)
+);
+
+insert into brokenboeing.SponsorTable(tId, tDescription) values (201,'Внешний спонсор');
+insert into brokenboeing.SponsorTable(tId, tDescription) values (202,'Внутренний спонсор');
+
+select * from brokenboeing.SponsorTable;
+
+
+*/
 
 /*
 create table brokenboeing.TypeOfEmploymentTable(

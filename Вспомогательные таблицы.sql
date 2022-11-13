@@ -76,6 +76,7 @@ tDescription varchar(200)
 insert into brokenboeing.ProjectPhaseTable(tId, tDescription) values (901,'Пресейл');
 insert into brokenboeing.ProjectPhaseTable(tId, tDescription) values (902,'Работы по созданию продукта');
 insert into brokenboeing.ProjectPhaseTable(tId, tDescription) values (903,'Гарантийные работы');
+insert into brokenboeing.ProjectPhaseTable(tId, tDescription) values (0,'-');
 
 select * from brokenboeing.ProjectPhaseTable;
 */
@@ -124,6 +125,7 @@ insert into brokenboeing.PaymentModelTable(tId, tDescription) values (701,'Time 
 insert into brokenboeing.PaymentModelTable(tId, tDescription) values (702,'Fixed Price');
 insert into brokenboeing.PaymentModelTable(tId, tDescription) values (703, 'Full Time');
 insert into brokenboeing.PaymentModelTable(tId, tDescription) values (704, 'Outstaffing');
+insert into brokenboeing.PaymentModelTable(tId, tDescription) values (0, '-');
 
 select * from brokenboeing.PaymentModelTable;
 */
@@ -137,7 +139,7 @@ delete from brokenboeing.ProjectClassTable where tId = 601;
 delete from brokenboeing.ProjectClassTable where tId = 602;
 insert into brokenboeing.ProjectClassTable(tId, tDescription) values (601, 'Операционный');
 insert into brokenboeing.ProjectClassTable(tId, tDescription) values (602, 'Инвестиционный');
-
+insert into brokenboeing.ProjectClassTable(tId, tDescription) values (0, '-');
 select * from brokenboeing.ProjectClassTable;
 */
 /*

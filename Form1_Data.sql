@@ -4,17 +4,20 @@
 select * from brokenboeing.timesheetex 
 where xClientId = 5 -- and xProgramId = 106 and xProjectId = 100
 and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Нет задач%') 
-and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Отсутствие технической возможности%') 
-and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Отгул%') 
-and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Больничный%')
-and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Отпуск%')
-and not (xClientId = 5 and xProgramId = 37 and xProjectId = 3800 )  -- 303 Управление персоналом
-and not (xClientId = 5 and xProgramId = 37 and xProjectId = 3801 )  -- 306 Бухгалтерия
-and not (xClientId = 5 and xProgramId = 37 and xProjectId = 3804 )  -- 305 АХО
-and not (xClientId = 5 and xProgramId = 37 and xProjectId = 5714 ) -- 'Develonica-needs' PR
+and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Отсутствие технической возможности%') -- ++ 
+and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Отгул%') -- ++
+and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Больничный%') -- ++
+and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Отпуск%') -- ++
+and not (xClientId = 5 and xProgramId = 37 and xProjectId = 3800 )  -- 303 Управление персоналом ++
+and not (xClientId = 5 and xProgramId = 37 and xProjectId = 3801 )  -- 306 Бухгалтерия ++
+and not (xClientId = 5 and xProgramId = 37 and xProjectId = 3804 )  -- 305 АХО ++
+
+and  (xClientId = 5 and xProgramId = 37 and xProjectId = 5714 ) -- 'Develonica-needs' PR
 and not (xClientId = 5 and xProgramId = 37 and xProjectId = 3799  ) -- 'Внутренние отделы и проекты' PR
 and not (xClientId = 5 and xProgramId = 298 and xProjectId = 4  ) -- MyMMTR
+
 and not (xClientId = 5 and xProgramId = 37 and xProjectId = 4614) -- обучение дизайнеров
+
 and not (xClientId = 5 and xProgramId = 234 and xProjectId = 5558   ) -- английский
 and not (xClientId = 5 and xProgramId = 37 and xProjectId = 3802   ) -- 302 Управление производством ЕСТЬ ВОПРОСЫ!!!
 and not (xClientId = 5 and xProgramId = 37 and xProjectId = 3468   ) -- 307 сисадмины

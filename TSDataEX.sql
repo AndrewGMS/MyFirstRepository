@@ -1,13 +1,13 @@
-
+/*
 insert into brokenboeing.TimeSheetConnectionTable (
    xClientId 
  , xProgramId
  , xProjectId
  , xWorkType
  , xProjectResult_Id
- 
  , projectpropertytable_Id
- , customertypetable_Id) 
+ , customertypetable_Id
+ , projectphasetable_Id) 
  values (
  5 -- xClientId 
  , 106 -- xProgramId
@@ -16,9 +16,14 @@ insert into brokenboeing.TimeSheetConnectionTable (
  , 0 -- xProjectResult_Id
  , 813 --  projectpropertytable_Id
  , 304 -- customertypetable_Id
- )
+ , 0 -- projectphasetable_Id
+ );
+*/
+-- SET SQL_SAFE_UPDATES = 0; delete from brokenboeing.TimeSheetConnectionTable; SET SQL_SAFE_UPDATES = 1; 
 
 select * from brokenboeing.TimeSheetConnectionTable;
+
+-- select brokenboeing.getProjectProperty('2023-03-31', 5, 106, 100, '%Нет задач%', 'description1');
 /*
 drop table brokenboeing.TimeSheetConnectionTable;
 
@@ -35,6 +40,11 @@ create table brokenboeing.TimeSheetConnectionTable (
  , xProjectResult_Id varchar(10)
  , projectpropertytable_Id varchar(10)
  , customertypetable_Id varchar(10)
+ , projectphasetable_Id varchar(10)
+ , typeofemploymenttable_Id varchar(10)
+ , projectclasstable_Id varchar(10)
+ , paymentmodeltable_Id varchar(10)
+ 
  
  );
 

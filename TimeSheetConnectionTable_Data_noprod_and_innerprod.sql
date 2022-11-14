@@ -1,3 +1,7 @@
+-- and not (xClientId = 5 and xProgramId = 298 and xProjectId = 4  ) -- MyMMTR    
+-- 11 4009 call brokenboeing.AddToConnectionTable(  5, 298, 4,'%', 0  , 802 , 301 , 0 , 1001 , 601, 0 );
+-- and not (xClientId = 5 and xProgramId = 241 and xProjectId = 4040  ) -- Camunda 
+-- 11 4009 call brokenboeing.AddToConnectionTable(  5, 241, 4040,'%', 0  , 802 , 301 , 0 , 1001 , 601, 0 );
 
 
 -- and  (xClientId = 5 and xProgramId = 37 and xProjectId = 51 ) 

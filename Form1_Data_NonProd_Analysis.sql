@@ -2,11 +2,10 @@
 
 
 select * from brokenboeing.timesheetex 
-where xClientId = 5 -- and xProgramId = 106 and xProjectId = 100
-
--- and not (xClientId = 5 and xProgramId = 241 and xProjectId = 4040  ) -- Camunda      
--- and not (xClientId = 5 and xProgramId = 298 and xProjectId = 4  ) -- MyMMTR                        ------------
-
+where xClientId != 5 
+/*
+and not (xClientId = 5 and xProgramId = 241 and xProjectId = 4040  ) -- Camunda      
+and not (xClientId = 5 and xProgramId = 298 and xProjectId = 4  ) -- MyMMTR                        ------------
 and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Нет задач%') 
 and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Отсутствие технической возможности%') -- ++ 
 and not (xClientId = 5 and xProgramId = 106 and xProjectId = 100 and xWorkType like '%Отгул%') -- ++
@@ -37,7 +36,7 @@ and not (xClientId = 5 and xProgramId = 37 and xProjectId = 51 )  -- 304 Упр�
 -- and ( xWorkType like '%Наставничество и обучение%' ) -- обучение дизайнеров
 
 
-
+*/
 
 order by xSpecialist
 

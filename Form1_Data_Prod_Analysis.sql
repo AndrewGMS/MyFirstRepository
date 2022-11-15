@@ -16,4 +16,5 @@ and not (xClientId = 5 and xProgramId = 241 and xProjectId = 4040  ) -- Camunda
 -- group by xClientId, xProgramId -- , xProjectId
 
 
-call getTSData('2022-08-01', '2022-08-31', 'Август 200022г.')
+call getTSData('2022-08-01', '2022-08-31', 'Август 200022г.');
+

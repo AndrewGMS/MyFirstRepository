@@ -2,6 +2,34 @@ set @BDate = concat('2022-08-01',' 00:00:00');
 set @EDate = concat('2022-08-31',' 23:59:59');
 set @xStageProject = 'Август 2022г.';
 
+SELECT 
+   tsv.xDate as Period
+-- @EDate as Period
+ , tsv.CustomerId as CustomerId
+ , tsv.BeName as BeName
+ , tsv.CustomerName as CustomerName
+ , tsv.CustomerName as CustomerNameMain
+ , sum(tsv.WorkHours) + sum(tsv.OverWorkHours) as WorkHours
+ /*
+ , tsv.UserId as UserId
+ , tsv.ProjectName as ProjectName
+-- , tsv.StageProject as StageProject
+ , @xStageProject  as StageProject
+ , tsv.ProjectPhase as ProjectPhase
+ , tsv.TypeEmlpoyment as TypeEmlpoyment
+ , tsv.Customer as Customer
+ , tsv.Sponsor as Sponsor
+ , sum(tsv.WorkHours) + sum(tsv.OverWorkHours) as WorkHours
+ , tsv.EmploeeName as EmploeeName
+  
+ */
+FROM brokenboeing.timesheetview  tsv
+where tsv.xDate between @BDate and @EDate
+group by BeName, CustomerId
+;
+
+
+/*
 select Period, BeName, UserId, ProjectName, StageProject, ProjectPhase, TypeEmlpoyment, Customer, Sponsor, sum(WorkHours) + sum(OverWorkHours) as WorkHours, EmploeeName from (
 select
 -- '2022-08-31' as Period
@@ -128,3 +156,5 @@ inner join brokenboeing.sponsortable st
    
    ) as xxx
    group by BeName, UserId, ProjectName, StageProject, ProjectPhase, TypeEmlpoyment, Customer
+   
+   */

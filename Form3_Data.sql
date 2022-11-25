@@ -23,6 +23,6 @@ SELECT
             AND (tsv.xProgramId LIKE agt.xProgramId)
             AND (tsv.xProjectId LIKE agt.xProjectId)
             AND (tsv.xWorkType LIKE agt.xWorkType)
-            AND (pEdate BETWEEN agt.xbDate AND agt.xeDate) 
+            AND (tsv.xDate BETWEEN agt.xbDate AND agt.xeDate) 
  
- GROUP BY xDate, ProjectId, BeName, ProjectName, ProjectStartDate, ProjectEndDate, CustomerName, ProjectClass, ActivityClass, Customer, PaymentModel
+ GROUP BY ProjectId, BeName, ProjectName, ProjectStartDate, ProjectEndDate, CustomerName, ProjectClass, ActivityClass, Customer, PaymentModel

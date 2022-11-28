@@ -26,3 +26,5 @@ SELECT
             AND (tsv.xDate BETWEEN agt.xbDate AND agt.xeDate) 
  
  GROUP BY ProjectId, BeName, ProjectName, ProjectStartDate, ProjectEndDate, CustomerName, ProjectClass, ActivityClass, Customer, PaymentModel
+ 
+ 

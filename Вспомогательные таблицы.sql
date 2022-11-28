@@ -1,7 +1,31 @@
 use brokenboeing;
 
-
 /*
+create table brokenboeing.PaymentStatusTable(
+tId decimal(10),
+tDescription varchar(200)
+);
+
+insert into brokenboeing.PaymentStatusTable(tId, tDescription) values (1201,'Заявка на оплату не подана');
+insert into brokenboeing.PaymentStatusTable(tId, tDescription) values (1202,'Ожидание оплаты');
+insert into brokenboeing.PaymentStatusTable(tId, tDescription) values (1203,'Оплачено');
+
+select * from brokenboeing.PaymentStatusTable;
+
+
+
+
+create table brokenboeing.PaymentTypeTable(
+tId decimal(10),
+tDescription varchar(200)
+);
+
+insert into brokenboeing.PaymentTypeTable(tId, tDescription) values (1101,'Предоплата');
+insert into brokenboeing.PaymentTypeTable(tId, tDescription) values (1102,'Оплата по завершению этапа');
+
+select * from brokenboeing.PaymentTypeTable;
+
+
 create table brokenboeing.BUStructureTable(
 tId decimal(10),
 tDescription varchar(200),

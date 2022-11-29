@@ -1,4 +1,4 @@
-SELECT * FROM brokenboeing.issuedinvoices order by /*xExtendedID */ xDateModified desc;
+SELECT * FROM brokenboeing.issuedinvoices -- order by /*xExtendedID */ xDateModified desc;
 -- SET SQL_SAFE_UPDATES = 0; delete from brokenboeing.issuedinvoices; SET SQL_SAFE_UPDATES = 1; 
 
 /*
@@ -98,7 +98,7 @@ call AddToIssuedInvoicesPay('200000000Август2022'  ,  '0000-00-00'  ,  '00
 
 
 
-
+AddToIssuedInvoices
 /*
 call AddToIssuedInvoices('100000000_2Август2022'  ,  '100000000_2'  ,  '14'  ,  'Выставить счет клиенту "Armada" за проект "АИС ЕСОО" период 01.08.2022 - 31.08.2022'  ,  '5045.25'  ,  'Согласовано к выполнению'  ,  'Ключников Андрей'  ,  'Armada'  ,  'АИС ЕСОО'  ,  'АИС ЕСОО'  ,  '2022-8-1'  ,  'inv2241'  ,  '1'  ,  '6'  ,  '211'); 
 call AddToIssuedInvoices('100000000Август2022'  ,  '100000000'  ,  '13'  ,  'Выставить счет клиенту "Armada" за проект "Тестирование Новой Билетной Системы" период 01.08.2022 - 31.08.2022'  ,  '1610800'  ,  'Согласовано к выполнению'  ,  'Ключников Андрей'  ,  'Armada'  ,  'Метро'  ,  'Тестирование Новой Билетной Системы'  ,  '2022-8-1'  ,  'inv2239'  ,  '1'  ,  '150'  ,  '3749'); 

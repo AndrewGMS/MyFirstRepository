@@ -45,7 +45,7 @@ SELECT
  JOIN brokenboeing.bustructuretable bust ON (bust.tId = agt.xContractorId)
  JOIN brokenboeing.paymenttypetable ptt ON (ptt.tId = 1102)
  
- LEFT JOIN brokenboeing.issuedinvoices iis ON (iis.xClientId LIKE agt.xClientId)
+ JOIN brokenboeing.issuedinvoices iis ON (iis.xClientId LIKE agt.xClientId)
             AND (iis.xProgramId LIKE agt.xProgramId)
             AND (iis.xProjectId LIKE agt.xProjectId)
             AND (iis.xDateOperation BETWEEN agt.xbDate AND agt.xeDate) 

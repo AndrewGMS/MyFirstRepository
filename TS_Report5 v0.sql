@@ -9,22 +9,46 @@ set @xEDate = LAST_DAY(@pDate);
 select 
   concat(year(LAST_DAY(@xEDate)), '-', if(month(LAST_DAY(@xEDate))<10, '0',''), month(LAST_DAY(@xEDate)), '-', day(LAST_DAY(@xEDate))) as tPeriod
   , 'ММТР' as tLocationName
-  , concat(/*wr.EmployeeId, ' ', */ ifnull(pp.ITN, '!ИНН'),' ', pp.LastName,' ', pp.FirstName,' ', pp.Patronymic ) as tEmlploeeId
-  , concat(wr.ProjectId, ' ', ps.ProjectName) as tProjectName
-  , concat(MONTHNAME(@xEDate), ' ', year(@xEDate)) as tProjectStageName
-  
-  , if (wt.ExternalId is null and ps.ProjectTypeId =1 , 'Billable', concat(wt.ExternalId, ' ', wt.ExternalName, ' - writeType')) as tWriteOfTypeName  -- ExternalId, ExternalName
-  
-  ,  cls.CompanyName as tMainCustomerName
-  , if (cls.id = 5, 'Внутренний', 'Внешний') as tSponsorName
-  , sum(wr.Time) + sum(wr.OverWork) as tWrittenOfHours
-  , pp.LegalEntityName as Appendix1
-  , concat(ps.ProjectName, ' - ', wr.ProjectId) as Appendix2
+  , pp.LegalEntityName as tLegalEntityName
+  , ifnull(pp.ITN, '!ИНН') as tEmployeeId  
+  , concat(pp.LastName,' ', pp.FirstName,' ', pp.Patronymic ) as tEmlploeeName
+--  , max(timesheetdb.getCostOneWorkHour(wr.EmployeeId, @xEDate, wr.ProjectId, wr.IsDutyJourney)) as tCost
+  , ' - ' as tDepartment
+  , ' - ' as tPositionAtWork
+--  , concat(ifnull(gs.Id, -1), ' - ', ifnull(gs.GradeName, '/')) as tInnerGrade
+  , ' - ' as tInnerGrade
+  , ' - ' as tDevelonicaDep
+  , ' - ' as tDevelonicaGrade
+  , ' - ' as tEmployeeRole
+  , ' - ' as tEmployeeLocation
+  , ' x ' as tEmployeeSalary
+  , ' x ' as tEmployeeSalaryInc
+  , ' x ' as tEmployeeTax
+  , ' x ' as tEmployeeInsuranceTax
+  , ' x ' as tEmployeeTaxAll
+  , ' x ' as tEmployeeSalaryAndTax
+  , ' x ' as tEmployeeAgreement
+  , pp.EmploymentDate as tEmploymentDate
+  , ifnull(pp.DismissedDate, '--') as DismissedDate
+  , pp.Id as Appendix1
+  , '' as Appendix2
   , '' as Appendix3
   , '' as Appendix4
   , '' as Appendix5
- from timesheetdb.work_records wr 
- inner join accountingdb.productionPeople pp on (wr.EmployeeId = pp.Id)
+
+ from accountingdb.productionPeople pp 
+ inner join timesheetdb.work_records wr on (pp.Id = wr.EmployeeId)
+ left join timesheetdb.grades gs on (pp.GradeId = gs.Id)
+
+ where wr.Date between @xBDate and @xEDate 
+   and wr.IsDeleted = 0
+   
+   
+ group by pp.id
+ 
+ 
+ 
+/* inner join accountingdb.productionPeople pp on (wr.EmployeeId = pp.Id)
  inner join timesheetdb.works_types wt on (wr.ProjectId = wt.ProjectId and wr.WorkTypeId = wt.id)
  inner join timesheetdb.projects ps on (wr.ProjectId = ps.Id)
  inner join timesheetdb.clients cls on (ps.ClientId = cls.Id)
@@ -37,4 +61,4 @@ select
  
  -- having tEmlploeeId like '%!ИНН%'
 -- limit 10
-   
+*/   

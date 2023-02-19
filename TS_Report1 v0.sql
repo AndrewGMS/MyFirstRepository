@@ -18,7 +18,7 @@ select
   ,  cls.CompanyName as tMainCustomerName
   , if (cls.id = 5, 'Внутренний', 'Внешний') as tSponsorName
   , sum(wr.Time) + sum(wr.OverWork) as tWrittenOfHours
-  , pp.LegalEntityName as Appendix1
+  , pp.LegalEntityName as Appendixtsreportfive1
   , concat(ps.ProjectName, ' - ', wr.ProjectId) as Appendix2
   , '' as Appendix3
   , '' as Appendix4
@@ -31,7 +31,8 @@ select
  where wr.Date between @xBDate and @xEDate 
    and wr.IsDeleted = 0
  group by wr.EmployeeId, wr.ProjectId
- order by pp.LastName, pp.FirstName
+ order by ps.ProjectName
+ -- order by pp.LastName, pp.FirstName
  -- order by tWriteOfTypeName
  -- order by LegalEntityName desc
  

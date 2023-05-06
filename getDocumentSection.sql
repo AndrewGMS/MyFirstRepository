@@ -1,4 +1,8 @@
--- SELECT * FROM managementreport.maindocumentstructure where DocumentStructureID = 3 ;
+call getDocumentSection(3, 0, 554, '-', '-');
+
+
+
+/*
 set @pDocumentStructureID= 3;
 set @pDataSectionId =  0;
 set @pDocumentId =  555;
@@ -25,3 +29,5 @@ select
  where mds.DocumentStructureID = @pDocumentStructureID
    and mds.DataSectionId = @pDataSectionId
  ;
+ 
+ */

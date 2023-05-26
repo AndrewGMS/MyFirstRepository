@@ -3,15 +3,14 @@
 
 /*
 call managementreport.InsertUpdateBankStatement('ООО "СофтЭкспорт"', '4401038993', '40702810729000004845', '043469623',
-  '000001', '2023-02-09', '33002', '2023-02-09', 'Прочее списание','51', 'Заработная плата по реестру №514 от 09.02.2023 в соответствии с Договором 29011573 от 11.10.2016',
-  '0', '-10000000', 'КОСТРОМСКОЕ ОТДЕЛЕНИЕ N 8640 ПАО СБЕРБАНК (Расчетный)', '7707083893', '70', '-', '-');
+  '000002-ост', '2022-12-31', '-----', '2022-12-31', 'Прочее списание','51', 'корректировка остатков',
+  '0', '44435786.32', 'КОСТРОМСКОЕ ОТДЕЛЕНИЕ N 8640 ПАО СБЕРБАНК (Расчетный)', '7707083893', '00', '-', '-');
+
 
 */
 
-
-
-set @CompanyDataId = managementreport.FindUnitByOneParam(2, 4, '4401038993');
-select @CompanyDataId;
+-- set @CompanyDataId = managementreport.FindUnitByOneParam(2, 4, '4401038993');
+-- select @CompanyDataId;
 
 
 /*
@@ -32,7 +31,7 @@ and md6.DataId in
 -- and md5.DataValue =  '043469623'
 
 -- select * from managementreport.maindictionary md4 where md4.StructureId = 4;
-
+/*
 set @pDataId = 
 (
 select DataId from managementreport.maindictionary md5
@@ -60,3 +59,4 @@ and md6.DataId in (select md4.DataId from managementreport.maindictionary md4 wh
 );
 
 select @pDataId;
+*/

@@ -5,7 +5,7 @@ git init
 git add *.sql
 git commit -m "My SQL commit"
 git branch -M main
-git pull
+REM git pull
 git push -u origin main
 
 

@@ -1,7 +1,8 @@
 y:
 cd \
 cd MySQLFiles 
-git init
+
+REM git init
 git add *.sql
 git commit -m "My SQL commit"
 git branch -M main

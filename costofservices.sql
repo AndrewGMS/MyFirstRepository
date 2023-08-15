@@ -1,5 +1,15 @@
-use accountingdb;
+-- use accountingdb;
 
+
+select * from accountingdb.costofservices;
+
+call accountingdb.setserviceactclear('2023-07-01', '2023-07-31', '4401069776');
+
+/*
+requestBeginDate: '2023-07-01',
+requestEndDate: '2023-07-01',
+requestOwnerTaxNumber: '4401069776'
+*/
 select * from accountingdb.costofservices;
 
 

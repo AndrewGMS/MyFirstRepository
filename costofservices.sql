@@ -1,19 +1,56 @@
 -- use accountingdb;
 
 
-select * from accountingdb.costofservices;
 
 call accountingdb.setserviceactclear('2023-07-01', '2023-07-31', '4401069776');
 
 /*
-requestBeginDate: '2023-07-01',
-requestEndDate: '2023-07-01',
-requestOwnerTaxNumber: '4401069776'
-*/
-select * from accountingdb.costofservices;
 
 
-/*
+
+-- select * from costofservices;
+
+-- update accountingdb.costofserviceslockdate csld set csld.lockDate = '2022-12-31' where csld.lockDate = '2023-01-01'; 
+
+-- delete from accountingdb.costofserviceslockdate
+-- SET new.userr_id = NULL;
+
+SET SQL_SAFE_UPDATES = 0;
+update accountingdb.costofserviceslockdate csld set csld.lockDate = '2022-12-31'; 
+SET SQL_SAFE_UPDATES = 1;
+
+
+insert into accountingdb.costofserviceslockdate (lockDate) values ('2023-01-01');
+
+
+CREATE DEFINER=`readuser`@`%` FUNCTION `isIntervalNoLocked`(
+   pRequestBeginDate date
+ , pRequestEndDate date
+ ) RETURNS int(1)
+BEGIN
+ declare returnValue int(1);
+ set returnValue = 0;
+ declare plockdate date; 
+ set plockdate = (select lockDate from accountingdb.costofserviceslockdate);
+ 
+ if ((plockdate < pRequestBeginDate) and (plockdate < pRequestEndDate)) 
+ then
+ begin
+  returnValue = 1;
+ end; 
+ end if;
+RETURN 1
+END
+
+
+update accountingdb.costofserviceslockdate csld set csld.lockDate = '2022-12-31' where csld.lockDate = '2023-01-01'; 
+
+drop table accountingdb.costofserviceslockdate;
+create table accountingdb.costofserviceslockdate(
+lockDate date not null
+);
+
+
 create table costofservices(
 requestId decimal(10)
 , requestDate date

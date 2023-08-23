@@ -1,11 +1,3 @@
--- use accountingdb;
- set @requestId = 'fgdgdffgdx, 10508, 10509; dfdgdfg rsrgdg dffgd gddg';
- set @requestId = '10505, 10508,  10518, 10528, 10548,   10507, 10509; dfdgdfg rsrgdg dffgd gddg';
- -- set @requestId = '';
-SET SQL_SAFE_UPDATES = 0;
-delete from accountingdb.costofservices;
-SET SQL_SAFE_UPDATES = 1;
-call accountingdb.setserviceact (@requestId, '2023-07-31', '0000-000060', '3066277.50', '3679533', '0', '0', '4401069776');
 
 select * from accountingdb.costofservices;
 -- call accountingdb.setserviceactclear('2023-07-01', '2023-07-31', '4401069776');
@@ -22,6 +14,17 @@ select * from accountingdb.costofservices;
  
 /*
 
+ set @requestId = 'fgdgdffgdx, 10508, 10509; dfdgdfg rsrgdg dffgd gddg';
+ set @requestId = '10505, 10508,  10518, 10528, 10548,   10507, 10509; dfdgdfg rsrgdg dffgd gddg';
+ -- set @requestId = '';
+SET SQL_SAFE_UPDATES = 0;
+delete from accountingdb.costofservices;
+SET SQL_SAFE_UPDATES = 1;
+call accountingdb.setserviceact (@requestId, '2023-07-31', '0000-000060', '3066277.50', '3679533', '0', '0', '4401069776');
+
+select * from accountingdb.costofservices;
+-- call accountingdb.setserviceactclear('2023-07-01', '2023-07-31', '4401069776');
+-- select  '10505; 10508;' as xx where '10505; 10508;' regexp '[0-9][0-9][0-9][0-9][0-9];' 
 
 
 -- select * from costofservices;

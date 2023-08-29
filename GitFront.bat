@@ -21,7 +21,7 @@ git branch -M front
 git pull https://github.com/AndrewGMS/account.git
 
 
-cd c:\MyGitFiles\
+cd y:\MyGitFiles\
 
 
 msg awk "Git Front Scripts BkUp may be done"

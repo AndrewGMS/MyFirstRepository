@@ -1,10 +1,25 @@
 
 select * from accountingdb.costofservices;
 -- call accountingdb.setserviceactclear('2023-07-01', '2023-07-31', '4401069776');
--- select  '10505; 10508;' as xx where '10505; 10508;' regexp '[0-9][0-9][0-9][0-9][0-9];' 
+-- selecttsreportone_v1  '10505; 10508;' as xx where '10505; 10508;' regexp '[0-9][0-9][0-9][0-9][0-9];' 
 
  
  
+ /*
+string-requestClientName-СООО "Белитсофт интернешнл"
+string-requestClientsAgreement-Договор № 23/11/2022 от 23.11.2022 г.
+string-requestClientsTaxNumber-
+*/
+ 
+ 
+ 
+requestId decimal(10)
+, requestDate date
+, requestNumber varchar(200)
+, requestSum decimal(10,2)
+, requestSumNoTax decimal(10,2)
+, requestOwnerTaxNumber varchar(12)
+);
 
  
  
@@ -13,6 +28,15 @@ select * from accountingdb.costofservices;
  
  
 /*
+
+alter table accountingdb.costofservices 
+ add column requestClientName varchar(200);
+ alter table accountingdb.costofservices 
+ add column requestClientsAgreement varchar(200);
+ alter table accountingdb.costofservices 
+ add column requestClientsTaxNumber  varchar(12);
+ 
+
 
  set @requestId = 'fgdgdffgdx, 10508, 10509; dfdgdfg rsrgdg dffgd gddg';
  set @requestId = '10505, 10508,  10518, 10528, 10548,   10507, 10509; dfdgdfg rsrgdg dffgd gddg';

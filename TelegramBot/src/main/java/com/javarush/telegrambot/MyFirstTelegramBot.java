@@ -24,6 +24,8 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
         sendTextMessageAsync("Привет!");
         sendTextMessageAsync("Привет! *Все хорошо!*");
         sendTextMessageAsync("Привет! _Все похуй!!_");
+        sendTextMessageAsync("Привет! _Cвета!_");
+
     }
 
 

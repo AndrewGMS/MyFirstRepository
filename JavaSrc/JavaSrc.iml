@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_0_Classtest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_2_01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_2_02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_2_03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_2_04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_2_05" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_AskMe_346" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_AutoArray" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_AutoBox2_352" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_AutoBox3_352" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_AutoBox4_353" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_AutoBox5_354" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_AutoBox_351" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Average" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_BoolTest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Conversion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Dyninit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_EnumDemo2_340" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_EnumDemo3_342" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_EnumDemo4_344" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_EnumDemo_339" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_LifeTime" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Matrix_105" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Meta2_363" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Meta_360" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Meta_361" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Promote" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Question_346" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_ScopeErr" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_Scoupe" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_ThreeDMatrix_105" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_TwoDAgain" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_TwoDArray" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_UnboxingError_355" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaStudy_1_1_3_myMeth_360" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyFirstProgramm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyFirstProgramm - Copy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MySecondProgramm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyThirdProgramm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyThirdProgramm2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyThirdProgramm3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyThirdProgramm4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyThirdProgramm5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyThirdProgramm6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyThirdProgramm7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyThirdProgramm8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyThirdProgramm9" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,6 +1,3 @@
-
-
-
 import javax.imageio.stream.FileImageOutputStream;
 import java.awt.print.Book;
 import java.io.*;
